@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          margin: 0px;
+          box-sizing: border-box;
+          padding: 0px;
+        }
+        input,button{
+          display: block;
+          padding: 10px;
+          margin:5px 0px;
+          width: 100%;
+          border-radius: 10px;
+          border:none
+        }
+    
+        form{
+          width: 50%;
+          margin:100px auto;
+          background-color: peachpuff;
+          padding: 10px;
+          border-radius: 10px;
+          
+        }
+    
+        button{
+          background:greenyellow;
+        }
+    
+      </style>
+</head>
+<body>
+    <h1>Welcome to the library server</h1>
+  <form action="/books/addbooks" method="post">
+     <input type="text" name="title" placeholder="title">
+     <input type="number" name="price" placeholder="price">
+     <input type="text" name="image" placeholder="image url">
+     <input type="text" name="desc" placeholder="description">
+     <input type="text" name="author" placeholder="author">
+    <button type="submit">submit</button>
+  </form>
+</body>
+</html>
